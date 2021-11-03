@@ -1,2 +1,2 @@
 # Experience-and-Interaction-Website
-A website for storing my experience and interaction portfolio
+https://huntergroff.github.io/Experience-and-Interaction-Website/
