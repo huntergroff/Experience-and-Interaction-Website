@@ -13,31 +13,64 @@ h1 {
 	width: 400px;
 	position: relative;
 	bottom: 90px;
+	/*background-color: lightblue;*/
 }
 
 .image {
 	width: 400px;
+	/*background-color: lightgrey;*/
 }
 
 .titleholder{
 	width: 30px;
 	display: inline-block;
+	/*background-color: lightcoral;*/
 }
+
 .title_and_image {
 	margin: 0 auto;
 	background-color: white;
 	padding-top: 60px;
 	width: 900px;
+	/*background-color: yellow;*/
 }
 
 .text {
 	width: 900px;
-	background-color: white;
 	margin: 0 auto;
+	/*background-color: green;*/
 }
 
-@media only screen and (max-width: 375px) {
-  body {
-    background-color: lightblue;
-  }
+@media only screen and (max-width: 500px) {
+	h1 {
+		font-size: 60px;
+		line-height: 60px;
+		width: 100%;
+		bottom: 0px;
+		padding-left: 0px;
+		padding-top: 20px;
+	}
+
+	.title_and_image {
+		width: 360px;
+	}
+
+	.image {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.titleholder {
+		width: 100%;
+		display: block;
+		padding-left: 0px;
+	}
+
+	.image {
+		display: block;
+	}
+
+	.text {
+		width: 360px;
+	}
 }
