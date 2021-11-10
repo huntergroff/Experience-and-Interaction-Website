@@ -41,7 +41,7 @@ h1 {
 	/*background-color: green;*/
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
 	h1 {
 		font-size: 60px;
 		line-height: 60px;
