@@ -1,6 +1,43 @@
 body {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 900;
-  font-size: 100px;
-  margin: 0;
+  margin: 0 auto;
+  font-family: futura-pt, sans-serif;
+}
+
+h1 {
+	margin: 0;
+	font-weight: 700;
+  	font-size: 120px;
+  	line-height: 120px;
+  	padding-left: 20px;
+  	display: inline-block;
+	width: 400px;
+	position: relative;
+	bottom: 90px;
+}
+
+.image {
+	width: 400px;
+}
+
+.titleholder{
+	width: 30px;
+	display: inline-block;
+}
+.title_and_image {
+	margin: 0 auto;
+	background-color: white;
+	padding-top: 60px;
+	width: 900px;
+}
+
+.text {
+	width: 900px;
+	background-color: white;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-color: lightblue;
+  }
 }
