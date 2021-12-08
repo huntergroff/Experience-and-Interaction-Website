@@ -1,0 +1,493 @@
+body {
+  margin: 0; 
+  padding: 0;
+  font-family: futura-pt, sans-serif;
+}
+
+.googletter {
+  height: 150px;
+}
+
+#Google {
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+
+
+/*upper G*/
+
+#G-up-box {
+  width: 116px;
+  height: 140px;
+  padding-top: 20px;
+  overflow: hidden;
+  position: relative;
+  bottom: 20px;
+}
+
+#G-up-box:hover {
+  height: 190px;
+}
+
+#G-up {
+  animation-duration: 1.3s;
+  opacity: 0.0;
+}
+
+#G-up-box:hover #G-up {
+  animation-name: fadeinandout;
+}
+
+#mario {
+  height: 148px;
+  position: relative;
+  bottom: 170px;
+  opacity: 1.0;
+}
+
+#G-up-box:hover #mario {
+  animation-name: fade, mariojump;
+  animation-duration: 0.25s, 1s;
+  animation-delay: 0.0s, 0.25s;
+}
+
+@keyframes fade {
+  from {opacity:1.0} to {opacity:0.0}
+}
+
+@keyframes mariojump {
+  from {
+    bottom: 0px;
+    right: 170px;
+  }
+  to {
+    bottom: 170px;
+    right: 0px;
+  }
+  
+}
+
+
+
+/*red O*/
+
+#blankbox {
+  width: 80px;
+  animation-duration: 1s;
+  animation-delay: 0.9s;
+    margin: 0 auto;
+  opacity: 0.0;
+  position: relative;
+  bottom: 32px;
+  z-index: 4;
+}
+
+#o-box:hover #blankbox {
+  animation-name: appearfade;
+}
+
+#qbox {
+  width: 75px;
+  animation-duration: 1s;
+  animation-delay: 0.25s;
+  margin: 0 auto;
+  opacity: 0.0;
+  position: relative;
+  bottom: 110px;
+  z-index: 1;
+}
+
+#o-box:hover #qbox {
+  animation-name: slidein;
+}
+
+#mushroom {
+  width: 75px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 268px;
+  animation-duration: 1.25s;
+  z-index: 0;
+}
+
+#o-box:hover #mushroom {
+  animation-name:appearandrise;
+}
+
+#o-red {
+  animation-duration: 1.25s;
+  opacity: 0.0;
+}
+
+#o-box:hover #o-red {
+  animation-name: fadeinandout;
+}
+
+#o-box {
+  display: flex;
+  width: 82px;
+  height: 120px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#o-box:hover {
+  height: 195px;
+}
+
+@keyframes slidein {
+  from {
+    right: 200px;
+    opacity: 1.0;
+  }
+
+  50% {
+    right: 0px;
+    opacity: 1.0;
+  }
+  
+  75% {
+    right: 0px;
+    opacity: 1.0;
+  }
+  
+  to {
+    right: 0px;
+    opacity: 0.0;
+  }
+}
+
+@keyframes appearfade {
+  from {
+    opacity: 1.0;
+  }
+  75% {
+    opacity: 1.0;
+  }
+  to {
+    opacity: 0.0;
+  }
+}
+
+@keyframes appearandrise {
+  from {
+    opacity: 1.0;
+    bottom: 268px;
+    width: 75px;
+  }
+  25% {
+    opacity: 0.0;
+    bottom: 268px;
+    width: 75px;
+  }
+  50% {
+    opacity: 0.0;
+    bottom: 180px;
+    width: 60px;
+  }
+  75% {
+    opacity: 1.0;
+    bottom: 180px;
+    width: 60px;
+  }
+  to {
+    opacity: 1.0;
+    bottom: 268px;
+    width: 75px;
+  }
+}
+
+@keyframes fadeinandout {
+  from {
+    opacity: 0.0;
+  }
+  25% {
+    opacity: 1.0;
+  }
+  90% {
+    opacity: 1.0;
+  }
+  to {
+    opacity: 0.0;
+  }
+}
+
+
+
+
+
+/*yellow o*/
+
+#coin {
+  width: 70px;
+  height: 75px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 113px;
+  left: 1px;
+  opacity: 1.0;
+}
+
+#coinbox:hover #coin {
+  animation-name: fade, holdinvis, flipin;
+  animation-duration: 0.4s, 0.4s, 0.2s;
+  animation-delay: 0.0s, 0.4s, 0.8s;
+}
+
+#coinbox {
+  width: 85px;
+  display: flex;
+  flex-direction: column;
+  height: 125px;
+  overflow: hidden;
+}
+
+.coinholder {
+  margin: 0 auto;
+}
+
+#o-yel {
+  opacity: 0.0;
+}
+
+#coinbox:hover #o-yel {
+  animation-name: fadein, holdvis, flipout;
+  animation-duration: 0.4s, 0.3s, 0.2s;
+  animation-delay: 0.0s, 0.4s, 0.7s;
+}
+
+
+@keyframes flipin {
+  from {
+    opacity: 1.0;
+    width: 0;
+  }
+  to {
+    opacity: 1.0;
+    width: 70px;
+  }
+}
+
+@keyframes flipout {
+    from {
+    opacity: 1.0;
+    width: 80px;
+  }
+  to {
+    opacity: 1.0;
+    width: 0px;
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0.0;} to { opacity: 1.0; }
+}
+
+@keyframes holdinvis {
+  from {opacity: 0.0;} to {opacity: 0.0;}
+}
+
+@keyframes holdvis {
+  from {opacity: 1.0;} to {opacity: 1.0;}
+}
+
+
+
+
+/*g-lowercase*/
+
+#g-low-box {
+  width: 81px;
+  height: 160px;
+  overflow: hidden;
+}
+
+#g-low-box:hover {
+  height: 250px;
+}
+
+#g-low {
+  opacity: 0.0;
+}
+
+#g-low-box:hover #g-low {
+  animation-duration: 1.7s;
+  animation-name: fadeinandout;
+}
+
+#yoshi {
+  height: 121px;
+  transform: scaleX(-1);
+  position: relative;
+  bottom: 118px;
+}
+
+#g-low-box:hover #yoshi {
+  animation-duration: 0.4s, 1.8s;
+  animation-name: fade, flyin;
+  animation-delay: 0.0s, 0.4s;
+}
+
+@keyframes flyin {
+  from {
+    bottom: -100px;
+  }
+  50% {
+    bottom: 140px;
+  }
+  to {
+    bottom: 118px;
+  }
+}
+
+
+
+
+
+/* Green l */
+
+#l-box {
+  width: 40px;
+  height: 114px;
+  position: relative;
+  bottom: 10px;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+#tube {
+  width: 40px;
+  position: relative;
+  bottom: 113px;
+  z-index: 3;
+}
+
+#plant {
+  width: 40px;
+  position: relative;
+  bottom: 237px;
+  z-index: 2;
+}
+
+#l {
+  position: relative;
+  left: 5px;
+  opacity: 0.0;
+}
+
+#l-box:hover #l{
+  animation-name: fadeinandout;
+  animation-duration: 1.5s;
+}
+
+#l-box:hover #tube {
+  animation-name: fade, tuberise;
+  animation-duration: 0.5s, 0.5s;
+  animation-delay: 0.0s, 0.5s;
+}
+
+#l-box:hover #plant {
+  animation-name: fade, holdinvis, plantrise;
+  animation-duration: 0.5s, 0.5s, 0.3s;
+  animation-delay: 0.0s, 0.3s, 0.8s;
+}
+
+@keyframes tuberise {
+  from {
+    bottom: 13px;
+  }
+  to {
+    bottom: 113px;
+  }
+}
+
+@keyframes plantrise {
+  from {
+    bottom: 180px;
+    transform: scale(0.5);
+  } to {
+    bottom: 237px;
+    transform: scale(1.0);
+  }
+}
+
+
+
+
+/* red e */
+#e-box {
+  width: 76px;
+  height: 119px;
+  position: relative;
+  overflow: hidden;
+}
+
+#e {
+  opacity: 0.0;
+}
+
+#redkoopa {
+  width: 60px;
+  position: relative;
+  bottom: 166px;
+  left: 76px;
+}
+
+#redshell {
+  width: 76px;
+  transform: rotate(-8deg);
+  position: relative;
+  bottom: 240px;
+}
+
+#e-box:hover {
+  padding-top: 15px;
+  bottom: 15px;
+}
+
+#e-box:hover #redshell {
+  animation-name: fade, holdinvis, shelldrop;
+  animation-duration: 0.5s, 1.0s, 0.5s;
+  animation-delay: 0.0s, 0.5s, 1.5s;
+}
+
+#e-box:hover #e {
+  animation-name: fadeinandout;
+  animation-duration: 1.0s;
+}
+
+#e-box:hover #redkoopa {
+  animation-name: koopaslide;
+  animation-duration: 1.0s;
+  animation-delay: 0.5s;
+}
+
+@keyframes koopaslide {
+  from {
+    left: 76px;
+  }
+  50% {
+    left: 8px;
+  }
+  to {
+    left: 8px;
+  }
+}
+
+@keyframes shelldrop {
+  from {
+    bottom: 260px;
+  }
+  33% {
+    bottom: 240px;
+  }
+  66% {
+    bottom: 244px;
+  }
+  to {
+    bottom: 240px;
+  }
+}
